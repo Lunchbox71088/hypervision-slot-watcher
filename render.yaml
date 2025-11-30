@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: hypervision-watcher
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python hv_watcher.py"
